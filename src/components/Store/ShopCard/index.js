@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types'
+
 export default function ShopCard(props) {
   const { products } = props;
 
@@ -21,4 +23,8 @@ export default function ShopCard(props) {
   );
 
   return productCards;
+}
+
+ShopCard.propTypes = {
+  props: PropTypes.array
 }

@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types'
+
 export default function ShopItem(props) {
   const { products } = props;
 
@@ -16,4 +18,8 @@ export default function ShopItem(props) {
   );
 
   return productItems;
+}
+
+ShopItem.propItem = {
+  props: PropTypes.array
 }
